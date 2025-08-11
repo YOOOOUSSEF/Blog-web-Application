@@ -1,0 +1,219 @@
+*{
+    padding:0;
+    margin:0;
+}
+body {
+  background-color:#77BEF0 ;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ justify-content: space-between;
+  height:100vh;
+  font-family: sans-serif;
+}
+
+
+.navBar1{
+    background-color:#578FCA ;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: serif;
+}
+.navBar2{
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+a{
+    text-decoration:none ;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.logo:hover,.logo:active {
+  color: rgb(85, 26, 139); 
+}
+
+.home,.contact,.about{
+    font-size: 20px;
+    color: white;
+}
+.home:hover,.contact:hover,.about:hover{
+opacity:.7;
+}
+.thePost{
+    font-size: 25px;
+    font-weight: bold;
+}
+.container1{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+;
+}
+.container2{
+    display :flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.container2 h3{
+    text-transform: capitalize;
+}
+.container3{
+    display:flex;
+    gap:5px;
+}
+
+input[type="submit"]{
+background-color:#3D74B6 ;
+border-radius: 10px;
+width: 100px;
+outline: none;
+color:white;
+border: none;
+padding: 10px;
+}
+
+input[type="submit"]:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.containerPost{
+ background-color: #113F67;
+ display: flex;
+ justify-content: space-between;
+ padding:20px ;
+ color: white;
+}
+
+.allBody{
+   background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:80%;
+    margin:auto;
+    border-radius: 20px;
+    margin-top: 10px;
+    color: black;
+}
+
+
+footer {
+  width: 100%;
+  height: 5rem; 
+  text-align: center;
+  font-size: 20px; 
+  background: #578FCA;
+  color: rgb(85, 26, 139);
+  padding: 20px;
+  margin-top: 10px;
+  align-self: flex-end;
+  flex-shrink: 0;
+  font-family: serif;
+}
+
+
+
+
+.aboutBody,.contactBody{
+    display:flex;
+    height:70vh;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+  font-family: sans-serif;
+  gap:20px;
+}
+
+img{
+    width: 150px;
+    border-radius: 100px;
+}
+.myInfo{
+
+    font-size: 25px;
+    color: black;
+}
+span{
+    color: #2d2d2d;
+}
+.someInfo{
+    text-align: center;
+    width: 70%;
+    font-size:18px;
+    color: #2d2d2d;
+}
+
+.contactBody a{
+font-size: 30px;
+}
+
+.allPost{
+    display:flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title,.content{
+    width:30%;
+    height:5%;
+
+}
+
+input[name="title"]{
+width: 100%;
+height:100%;
+
+  border-radius:20px ;
+    outline: none;
+    padding: 5px;
+
+       color:#EB5B00 ;
+    font-size:15px;
+
+}
+
+textarea{
+width: 100%;
+height:500%;  
+
+  border-radius:20px ;
+    outline: none;
+     padding: 5px;
+
+        color:#EB5B00 ;
+    font-size:15px;
+}
+.submit{
+    margin-top:100px ;
+}
+
+input[name="title"]:focus,textarea:focus{
+outline: 2px solid blue;
+}
+
+.viewAll{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    padding: 10px;
+}
+
+.viewContent{
+    font-size: 20px;
+    word-wrap:break-word;
+    padding: 10px;
+    width: 50%;
+    color: #2d2d2d;
+}
+.viewTitle{
+    text-transform: capitalize;
+    color: #283593;
+}

@@ -1,0 +1,28 @@
+<%-include("partials/header.ejs")%>
+
+
+<form action="/home" method="post">
+
+    <div class="allPost">
+     <div class="title">
+         <input type="text" placeholder="Title" name="title" required>
+    </div>
+   
+    <br>
+    <div class="content">
+    <textarea name="content"  required></textarea>
+    </div>
+
+    <br>
+    
+
+    <div class="submit">
+            <input type="submit" value="submit">
+    </div>
+  
+    </div>
+  
+</form>
+
+
+<%-include("partials/footer.ejs")%>

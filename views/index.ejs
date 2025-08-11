@@ -1,0 +1,57 @@
+<%-include("partials/header.ejs")%>
+
+<main>
+
+<div class="allBody ">
+
+ <div class="containerPost">
+<div class="thePost">
+  Post Here
+    </div>
+  
+    <div> 
+    <form action="/creation" method="post">
+        <input type="submit" value="Create Post">
+    </form> 
+</div>
+  
+</div>
+
+
+<div class="container1">
+       <%if(locals.title&&locals.content){%>
+      <%for(let i=0;i<title.length;i++){%>
+        <div class="container2">
+
+        <h3><%=title[i]%></h3>
+
+        <div class="container3">
+        <form action="/view" method="post">
+            <input type="hidden" value="<%=i%>" name="position">
+            <input type="submit" value="View">
+        </form>
+
+        <form action="/edit" method="post">
+                <input type="hidden" value="<%=i%>" name="position">
+                <input type="submit" value="Edit">
+        </form>
+
+        <form action="/delete" method="post">
+            <input type="hidden" value="<%=i%>" name="position">
+            <input type="submit"  value="Delete">
+        </form>
+        </div>
+ 
+
+        </div>
+              <%}%>
+    <%}%>
+</div>
+ 
+
+
+</div> 
+
+</main>
+
+<%-include("partials/footer.ejs")%>
