@@ -12,10 +12,11 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/",(req,res)=>{
-res.render("index.ejs",{title:titleArr,content:contentArr})
+res.render("index.ejs",{title:titleArr,content:contentArr});
+
 });
 app.get("/home",(req,res)=>{
-res.render("index.ejs",{title:titleArr,content:contentArr})
+res.render("index.ejs",{title:titleArr,content:contentArr});
 
 });
 app.get("/about",(req,res)=>{
@@ -35,11 +36,9 @@ app.post("/home",(req,res)=>{
 
 titleArr[length]=req.body.title;
 contentArr[length]=req.body.content;
-
-
-res.render("index.ejs",{title:titleArr,content:contentArr});
-
 length++;
+
+res.redirect("/home"); //this because when refresh the browser, it make request like the last one.
 });
 
 app.post("/view",(req,res)=>{
@@ -57,16 +56,16 @@ var pos=parseInt(req.body.position, 10);;
 titleArr[pos]=req.body.title;
 contentArr[pos]=req.body.content;
 
-res.render("index.ejs",{title:titleArr,content:contentArr});
+res.redirect("/home"); //this because when refresh the browser, it make request like the last one.
 });
 
 app.post("/delete",(req,res)=>{
 var pos=parseInt(req.body.position, 10);;
 titleArr.splice(pos,1);
 contentArr.splice(pos,1);
-
-res.render("index.ejs",{title:titleArr,content:contentArr});
 length--;
+
+res.redirect("/home"); //this because when refresh the browser, it make request like the last one.
 });
 
 app.listen(port,()=>{

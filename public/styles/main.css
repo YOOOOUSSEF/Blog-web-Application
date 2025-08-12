@@ -78,8 +78,19 @@ padding: 10px;
 }
 
 input[type="submit"]:hover{
-    background-color: aqua;
+    background-color: #7ADAA5;
     color: black;
+}
+
+#create {
+    background-color: #08CB00 ;
+}
+#create:hover{
+    background-color: #FFE100;
+    color: black;
+}
+#del:hover{
+    background-color: red;
 }
 
 .containerPost{
@@ -174,8 +185,8 @@ height:100%;
     outline: none;
     padding: 5px;
 
-       color:#EB5B00 ;
-    font-size:15px;
+    color:black ;
+    font-size:18px;
 
 }
 
@@ -187,8 +198,8 @@ height:500%;
     outline: none;
      padding: 5px;
 
-        color:#EB5B00 ;
-    font-size:15px;
+    color:black ;
+    font-size:18px;
 }
 .submit{
     margin-top:100px ;
@@ -204,16 +215,19 @@ outline: 2px solid blue;
     height: 70vh;
     align-items: center;
     padding: 10px;
+    
 }
 
 .viewContent{
     font-size: 20px;
     word-wrap:break-word;
     padding: 10px;
-    width: 50%;
+    width: 70%;
     color: #2d2d2d;
 }
 .viewTitle{
     text-transform: capitalize;
     color: #283593;
+    width: 50%;
+    text-decoration: solid underline #283593;
 }
