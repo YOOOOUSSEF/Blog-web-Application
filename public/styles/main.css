@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
- justify-content: space-between;
+  justify-content: space-between;
   height:100vh;
   font-family: sans-serif;
 }
@@ -70,7 +70,7 @@ opacity:.7;
 input[type="submit"]{
 background-color:#3D74B6 ;
 border-radius: 10px;
-width: 100px;
+width: 100%;
 outline: none;
 color:white;
 border: none;
@@ -133,12 +133,13 @@ footer {
 
 .aboutBody,.contactBody{
     display:flex;
-    height:70vh;
+
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
-  font-family: sans-serif;
-  gap:20px;
+
+    font-family: sans-serif;
+    gap:20px;
 }
 
 img{
@@ -149,6 +150,7 @@ img{
 
     font-size: 25px;
     color: black;
+
 }
 span{
     color: #2d2d2d;
@@ -158,6 +160,7 @@ span{
     width: 70%;
     font-size:18px;
     color: #2d2d2d;
+
 }
 
 .contactBody a{
@@ -172,7 +175,7 @@ font-size: 30px;
     align-items: center;
 }
 .title,.content{
-    width:30%;
+    width:50%;
     height:5%;
 
 }
@@ -202,7 +205,7 @@ height:500%;
     font-size:18px;
 }
 .submit{
-    margin-top:100px ;
+    margin-top:150px ;
 }
 
 input[name="title"]:focus,textarea:focus{
@@ -215,11 +218,12 @@ outline: 2px solid blue;
     height: 70vh;
     align-items: center;
     padding: 10px;
+    text-align: center;
     
 }
 
 .viewContent{
-    font-size: 20px;
+    font-size: 18px;
     word-wrap:break-word;
     padding: 10px;
     width: 70%;
@@ -230,4 +234,15 @@ outline: 2px solid blue;
     color: #283593;
     width: 50%;
     text-decoration: solid underline #283593;
+    
 }
+
+@media (max-width:400px){
+.title,.content{
+    width:80%;
+  }
+  .viewContent{
+    width: 100%;
+  }
+}
+
